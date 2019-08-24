@@ -1,0 +1,14 @@
+.index-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  header, nav  {
+    height: .44rem;
+    line-height: .44rem;
+  }
+  main {
+    flex: 1;
+    overflow-y:auto;
+    background: #f3f4f5;
+  }
+}

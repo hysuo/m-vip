@@ -1,0 +1,25 @@
+<div class="d-main-wrap">
+    {{each data}}
+    <img src="{{$value.smallImage}}" alt="">
+    <div class="d-price-info">
+        <span>￥<span class="d-price">{{$value.vipshopPrice}}</span></span>
+        <del>￥<span class="d-rprice">{{$value.marketPrice}}</span></del>
+        <span class="d-discount">{{$value.vipDiscount}}</span>
+    </div>
+    <div class="d-title">{{$value.productName}}</div>
+    {{/each data}}
+    <div>
+        <p class="d-size">尺码</p>
+        <div class="d-size-list">
+            <li class="d-size-active">10.5</li>
+            <li>7</li>
+            <li>7.5</li>
+            <li>10</li>
+            <li>8</li>
+            <li>8.5</li>
+            <li>9</li>
+            <li>9.5</li>
+        </div>
+    </div>
+    
+</div>

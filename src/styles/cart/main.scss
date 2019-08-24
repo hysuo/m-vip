@@ -1,0 +1,153 @@
+.cart-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header{
+        height: .5rem;
+        background: #fff;
+        >div{
+            height: 100%;
+            display: flex;
+            font-size: .2rem;
+            padding-left: .1rem;
+            i{
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    main{
+        flex:1;
+        background: #fff;
+        overflow-y: auto;
+        .cart-null{
+            padding: .2rem .1rem;
+            font-size: .4rem;
+            color:#e4007f;
+        }
+        .safe{
+            height: .3rem;
+            padding: 0 .1rem;
+            background: #e8eaf4;
+            i{
+                color:#4cc144;
+                font-size: .25rem;
+            }
+            span{
+                padding-left: .1rem;
+                font-size: .14rem;
+            }
+        }
+        .address{
+            height: .4rem;
+            background: #656c89;
+            color:#fff;
+            font-size: .2rem;
+            padding: 0 .1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cart-list{
+            padding: .2rem .1rem;
+            .cart-goods{
+                height: 1.4rem;
+                padding-top:.2rem;
+                display: flex;
+                justify-content: space-between;
+                @include border(0 0 1px 0);
+                img{
+                    width: 20%;
+                    height: 60%;
+                }
+                .cart-goods-info{
+                    padding:0 .2rem 0 .1rem;
+                    p:nth-child(1){
+                        color: black;
+                        font-size: .14rem;
+                    }
+                    p:nth-child(2){
+                        color: #999;
+                        font-size: .12rem;
+                    }
+                    p:nth-child(3){
+                        padding-bottom: .04rem;
+                        span{
+                            padding: .02rem;
+                            color: #3a5998;
+                            font-size: .13rem;
+                            border:1px solid #3a5998 ;
+                            border-radius: .05rem;
+                        }
+                    }
+                    button{
+                        width: 12%;
+                        border: 0;
+                        background: #fff;
+                        @include border(1px);
+                        color: #999;
+                        font-size: .16rem;
+                    }
+                }
+                .cart-price{
+                    position: relative;
+                    p{
+                        color:#e4007f;
+                    }
+                    del{
+                        color:#ccc;
+                        font-size: .12rem;
+                    }
+                    .cart-remove{
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        font-size: .2rem;
+                        color:#999;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        height:.8rem;
+        background: #fff;
+        padding: .08rem .1rem;
+        >div{
+            p{
+                font-size: .18rem;
+                text-align: center;
+                span{
+                    color:#e4007f;
+                }
+            }
+            >div{
+                display: flex;
+                justify-content: space-around;
+                button{
+                    width:40%; 
+                    height: .4rem;
+                    border:0;
+                    @include border(1px);
+                }
+                button:nth-child(1){
+                    background: #fff;
+                    color: #999;
+                }
+                button:nth-child(2){
+                    background: #e4007f;
+                    color:#fff;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,15 @@
+<div>
+    <div class="goods-women">
+        {{each data}}
+            <p>{{$value.name}}</p>
+            <div>
+                {{each $value.children}}
+                <div>
+                    <img src="{{$value.image}}" alt="">
+                    <p>{{$value.name}}</p>
+                </div>
+                {{/each $value.children}}
+            </div>
+        {{/each data}}
+    </div>
+</div>

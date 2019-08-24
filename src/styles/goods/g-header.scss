@@ -1,0 +1,26 @@
+.g-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .g-header{
+        height:.5rem;
+        @include border(0 0 1px 0);
+        >div{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            font-size: .23rem;
+            .g-return,.g-shoucang,.g-share{
+                width: 10%;
+                color:#999;
+            }
+            .g-title{
+                flex:1;
+                color:black;
+            }
+        }
+    }
+    .g-main{
+        flex:1;
+    }
+}

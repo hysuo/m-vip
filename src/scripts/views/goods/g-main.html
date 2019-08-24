@@ -1,0 +1,15 @@
+<div class="g-main-wrap">
+    {{each data}}
+    <div data-id = "{{$value.productId}}">
+        <a href="../../../details.html">
+            <img src="{{$value.smallImage}}" alt="">
+            <p class="g-price">
+                <span>￥{{$value.vipshopPrice}}</span>
+                <span><del>￥{{$value.marketPrice}}</del></span>
+                <span>{{$value.vipDiscount}}</span>
+            </p>
+            <p class="g-title">{{$value.productName}}</p>
+        </a>
+    </div>
+    {{/each data}}
+</div>

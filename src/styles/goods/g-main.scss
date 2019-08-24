@@ -1,0 +1,36 @@
+.g-main{
+    padding: .05rem;
+    overflow-y:auto;
+    .g-main-wrap{
+        overflow-y:auto;
+        display: flex;
+        flex-wrap: wrap;
+        >div{
+            width: 48%;
+            margin: 1%;
+            height: 3.3rem;
+            background: #fff;
+            img{
+                width: 100%;
+                height:2.2rem;
+            }
+            .g-price{
+                padding: .05rem .1rem;
+                span:first-child{
+                    font-size: .16rem;
+                    color:black;
+                }
+                span:nth-child(2),span:nth-child(3){
+                    font-size: .14rem;
+                    color:#98989f;
+                }
+            }
+            .g-title{
+                padding: 0 .1rem;
+                color:#000;
+            }
+
+        }    
+    }
+
+}

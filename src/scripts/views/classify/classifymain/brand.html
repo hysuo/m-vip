@@ -1,0 +1,16 @@
+<div class="brand-wrap">
+{{each data}}
+<div class="floor">
+    <div class="title">精品{{$index}}</div>
+    <div class="img-wrap">
+        {{each $value[0].child}}
+            {{if $value.data.imageUrl}}
+                <div><img src="{{$value.data.imageUrl}}" alt=""></div>
+            {{else if $value.data.brandStoreLogoPic}}
+                <div><img src="{{$value.data.brandStoreLogoPic}}" alt=""></div>
+            {{/if}}
+        {{/each $value[0].child}}
+    </div>
+</div>
+{{/each data}}
+</div>

@@ -1,0 +1,27 @@
+<div>
+    <div class="safe"><i class="yo-ico">&#xe622;</i><span>你正在安全购物环境中,请放心购买</span></div>
+    <div class="address"><span>设置收获地址</span><i class="yo-ico">&#xe68b;</i></div>
+    <div class="cart-list">
+        {{each data}}
+        <div class="cart-goods">
+            <img src="{{$value.smallImage}}" alt="">
+            <div class="cart-goods-info">
+                <p>唯品自营|{{$value.productName}}</p>
+                <p>尺码：<span class="cart-size">{{$value.size}}</span></p>
+                <p><span>不支持换货</span></p>
+                <div>
+                    <button class="reduce-num" data-id="{{$value.productId}}" data-size = "{{$value.size}}">-</button>
+                    <span class="cart-goods-num">{{$value.count}}</span>
+                    <button class="add-num" data-id="{{$value.productId}}" data-size = "{{$value.size}}">+</button>
+                </div>
+            </div>
+            <div class="cart-price">
+                <p>￥<span class="cart-v-price">{{$value.vipshopPrice}}</span></p>
+                <del>￥<span class="cart-r-price">{{$value.marketPrice}}</span></del>
+                <div class="cart-remove" data-id="{{$value.productId}}" data-size = "{{$value.size}}">X</div>
+            </div>
+        </div>
+        {{/each data}}
+    </div>
+
+</div>

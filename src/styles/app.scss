@@ -1,0 +1,21 @@
+@import './yo/usage/core/reset';
+@import './module/common';
+@import './module/index';
+@import './module/header.scss';
+@import './module/nav.scss';
+@import './module/main/recommend.scss';
+@import './module/main/beauty.scss';
+@import './module/main/household.scss';
+
+@import './classify/header.scss';
+@import './classify/classifymain/main.scss';
+@import './classify/classifymain/brand.scss';
+
+@import './goods/g-header.scss';
+@import './goods//g-main.scss';
+
+@import './details/main.scss';
+@import './cart/main.scss';
+#root {
+    height: 100%;
+  }

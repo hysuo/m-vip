@@ -1,0 +1,153 @@
+main{
+    .swiper-container{
+        width: 100%;
+        height: 1.5rem;
+        top:0;
+        left: 0;
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    .beauty-goods,.beauty-goods2,.beauty-goods3,.beauty-goods4,.beauty-goods5{
+        height:1.75rem;
+        display: flex;
+        >div{
+            flex:1;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .beauty-goods2{
+        height: 1.51rem;
+    }
+    .beauty-img{
+        height: .475rem;
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    .beauty-goods3{
+        height: 1rem;
+    }
+    .beauty-goods4,.beauty-goods5{
+        height: 0.84rem;
+    }
+    .beauty-goods6{
+            height: 2.25rem;
+            width: 100%;
+            position: relative;
+            >img{
+                position: absolute;
+                width: 100%;
+                height:100%;
+            }
+            >div{
+                position: relative;
+                z-index: 2;
+                flex:1;
+                padding: 0 .1rem;
+                padding-top: .8rem;
+                padding-bottom: .1rem;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 .03rem;
+                    img:first-child{
+                        width: 100%;
+                        height:100%;
+                    }
+                    img:nth-child(2){
+                        width: .4rem;
+                        height: .2rem;
+                    }
+                    p{  
+                        font-size: .12rem;
+                        span:first-child{
+                            background: rgb(222, 61, 150);
+                            color:#fff;
+                            
+                        }
+                        span:last-child{
+                            padding-left: .05rem;
+                           color:rgb(222, 61, 150); 
+                        }
+                        
+                    }
+                }
+            } 
+    }
+    .beauty-img2{
+        height: .775rem;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .beauty-img3{
+        height: 2.85rem;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .beauty-title{
+        height: .575rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-family: PingFangSC-Medium;
+            color: rgb(34, 34, 34);
+            font-weight: bold;
+            font-size: .16rem;
+        }
+    }
+    .beauty-shop-list{
+        >div{
+            padding:0 .15rem ;
+            >div{
+                padding-top:.15rem;
+            }
+            >div:first-child{
+                padding-top: 0;
+            }
+            img{
+                height: 1.68rem;
+                width: 100%;
+            }
+            p{
+                padding-left: .05rem;
+                padding-right: .05rem;
+                background: #fff;
+            }
+            p:nth-child(2){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span:first-child{
+                    font-family: PingFangSC-Regular;
+                    color: rgb(34, 34, 34);
+                    line-height: 0.3rem;
+                    font-weight: bold;
+                }
+                span:nth-child(2){
+                    font-family: PingFangSC-Regular;
+                     color: rgb(152, 152, 159);
+                     line-height: 0.3rem;
+                }
+            }
+            p:last-child{
+                color: rgb(222, 61, 150)
+            }
+        }
+    }
+}
