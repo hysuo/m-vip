@@ -1,17 +1,21 @@
 <div>
 {{each res}}
         {{if $value.data.brand.remain_days ===undefined}}
+        <a href="../../../goods.html">
         <div>
                 <img src="{{$value.data.brand.brand_image}}" alt="">
                 <p><span>{{$value.data.brand.title}}</span></p>
                 <p>{{$value.data.brand.discount}}</p>
             </div>
+        </a>
         {{else}}
+        <a href="../../../goods.html">
         <div>
                 <img src="{{$value.data.brand.brand_image}}" alt="">
                 <p><span>{{$value.data.brand.title}}</span><span>{{$value.data.brand.remain_days}}</span></p>
                 <p>{{$value.data.brand.discount}}</p>
             </div> 
+        </a>
         {{/if}}
 {{/each res}}
 </div>

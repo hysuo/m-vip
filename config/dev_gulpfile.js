@@ -49,11 +49,11 @@ function webServer () {
     livereload: true,
     middleware() {
       return [
-        proxy('/api', {
-          target: 'https://m.lagou.com',
+        proxy('/svip', {
+          target: 'http://localhost:3000',
           changeOrigin: true,
           pathRewrite: {
-            '^/api': ''
+            '^/svip': ''
           }
         }),
         proxy('/vip', {

@@ -95,7 +95,8 @@ class RecommendController{
 
     }
     async renderShop(){
-        let res = (await requestShopData.get()).data.data.floor_list;
+        // let res = (await requestShopData.get()).data.data.floor_list;
+        let res = (await requestShopData.get()).data.list;
         // res = res.splice(1,18)
         // console.log(res);
         // let html = "";
@@ -122,7 +123,7 @@ class RecommendController{
         //         }
         //     }
         // })
-        let html = template.render(shopTpl,{res})
+        let html = template.render(shopTpl,{res,escap:false})
         $('.shop-wrap').html(html);
     }   
 }

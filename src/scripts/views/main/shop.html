@@ -1,20 +1,19 @@
 {{each res}}
-    
-        {{if $value.data.brand.remain_days ===undefined}}
-        <div>
-            <a href="../../../goods.html">
-                <img src="{{$value.data.brand.brand_image}}" alt="">
-                <p><span>{{$value.data.brand.title}}</span></p>
-                <p>{{$value.data.brand.discount}}</p>
-            
-            </div>
-        {{else}}
-        <div>
-             <a href="../../../goods.html">
-                <img src="{{$value.data.brand.brand_image}}" alt="">
-                <p><span>{{$value.data.brand.title}}</span><span>{{$value.data.brand.remain_days}}</span></p>
-                <p>{{$value.data.brand.discount}}</p>
-            </a>
-        </div> 
+    {{if $value.pic === undefined}}
+    <div>
+        <a href="{{$value.link}}">
+            <img src="{{$value.mobileImageOne}}" alt="">
+            <p><span>{{$value.salesName}}</span></p>
+            <p>{{$value.agio.replace(/<[^><]+>/g,"")}}</p>
+        </div>
+    {{else}}
+    <div>
+        <a href="{{$value.link}}">
+            <img src="{{$value.pic}}" alt="">
+            <p><span>{{$value.salesName}}</span></p>
+            <p >{{$value.agio}}</p>
+        </div>
     {{/if}}
 {{/each res}}
+
+       
